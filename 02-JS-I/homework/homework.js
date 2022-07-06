@@ -1,22 +1,22 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = null;
+const nuevaString = 'Palabra';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = null;
+const nuevoNum = 420;
 
 // Crea una variable booleana:
-const nuevoBool = null;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -42,7 +42,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var rest = y - x
+  var rest = x - y
   return rest
 }
 
@@ -75,7 +75,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.lenght == str2.lenght) { 
+  if (str1.lenght === str2.lenght) { 
     return true
   } else {
     return false
@@ -145,7 +145,7 @@ function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
   var cub = Math.pow(num, 3)
-  return cuadr
+  return cub
 }
 
 function elevar(num, exponent) {
@@ -194,7 +194,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código: 
-  var exclam = (str, '!')
+  var exclam = (str + '!')
   return exclam
 }
 
@@ -202,7 +202,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var nomb = (nombre, apellido)
+  var nomb = (nombre + ' ' + apellido)
   return nomb
 }
 
@@ -210,7 +210,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var saludo = ('Hola', nombre + '!')
+  var saludo = ('Hola ' + nombre + '!')
   return saludo  
 }
 
@@ -254,7 +254,7 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra.lenght < 2) {
-    if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+    if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
       return 'Es vocal'
     } else {
       return 'Dato incorrecto'
